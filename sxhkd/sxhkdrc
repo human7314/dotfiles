@@ -34,3 +34,7 @@ Print
 # Lockscreen
 super + shift + l 
   betterlockscreen -l
+
+# Xprop
+super + o
+  st -e sh -c 'xprop; exec $SHELL'

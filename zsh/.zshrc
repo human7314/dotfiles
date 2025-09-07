@@ -29,6 +29,9 @@ eval "$(direnv hook zsh)"
 # Aliases
 source $HOME/.config/zsh/aliases.zsh
 
+# SSH-agent
+eval $(keychain --eval --quiet ~/.config/.ssh/id_ed25519)
+
 # Plugins 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
