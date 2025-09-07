@@ -1,0 +1,36 @@
+# Explorer
+super + e
+	exec nemo
+
+# Reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd && notify-send "Sxhkd Reloaded"
+
+# Browser 
+super + c
+	exec chromium
+
+# Volume keys
+#
+# Up
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5% && kill -44 $(pidof dwmblocks)
+
+# Down
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5% && kill -44 $(pidof dwmblocks)
+
+# Mute
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle && kill -44 $(pidof dwmblocks)
+
+# Screenshots
+# Print
+#   flameshot gui --clipboard --path ~/Pictures/Screenshots/
+Print
+  maim -s | tee ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png | xclip -selection clipboard -t image/png
+
+
+# Lockscreen
+super + shift + l 
+  betterlockscreen -l

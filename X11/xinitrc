@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# DPI
+# xrdb -merge ~/.config/X11/Xresources 
+
+# Keyboard
+xset r rate 200 40 & 
+
+# Programs 
+dunst & 
+sxhkd &
+# lxsession & 
+flameshot &
+
+# numlock
+numlockx & 
+
+# Wallpaper
+nitrogen --restore &
+
+# Nvidia
+exec ~/.local/bin/nvidia_powerlevel.sh &
+
+# compositor
+picom & 
+
+# Lockscreen
+# betterlockscreen &
+
+# dwm
+exec ~/.local/bin/dwmstart.sh
