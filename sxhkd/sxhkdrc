@@ -25,10 +25,10 @@ XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle && kill -44 $(pidof dwmblocks)
 
 # Screenshots
-# Print
-#   flameshot gui --clipboard --path ~/Pictures/Screenshots/
 Print
-  maim -s | tee ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png | xclip -selection clipboard -t image/png
+  flameshot gui --clipboard --path ~/Pictures/Screenshots/
+# Print
+#   maim -s | tee ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png | xclip -selection clipboard -t image/png
 
 
 # Lockscreen
