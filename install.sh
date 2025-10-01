@@ -37,5 +37,12 @@ else
     echo "⚠️ .zprofile not found in $DOTFILES"
 fi
 
+if [ -f "$DOTFILES/starship.toml" ]; then
+  echo "→ Installing starship.toml"
+  cp -f "$DOTFILES/starship.toml" "$CONFIG/starship.toml"
+else
+  echo "⚠️ starship.toml not found in dotfiles, skipping"
+fi
+
 echo "✅ Dotfiles installation complete!"
 
