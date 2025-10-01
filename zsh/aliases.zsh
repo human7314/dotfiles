@@ -6,7 +6,9 @@ alias gcl="git clone --depth=1"
 alias ll="exa --icons -1"
 alias l="exa --icons -a"
 
+#================
 # change dirs
+#================
 
 # Suckless
 alias suck="cd ~/.config/suckless"
@@ -24,3 +26,10 @@ alias open="xdg-open"
 # alias music="ncmpcpp"
 
 alias feh="feh --full-screen --edit"
+
+# Neovim
+alias vim="neovim"
+alias snvim="sudo -E -s nvim"
+
+# AUR Helper
+alias yay="paru"

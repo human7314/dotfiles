@@ -31,7 +31,8 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # Qt and Gtk Uniform Look
-export QT_QPA_PLATFORMTHEME=gtk3
+# export QT_QPA_PLATFORMTHEME=gtk3
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Automatically start X on login to tty1 if DISPLAY is not set
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then

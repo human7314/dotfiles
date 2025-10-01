@@ -20,12 +20,6 @@ bindkey -v
 # direnv
 eval "$(direnv hook zsh)"
 
-# Theme
-# fpath+=($HOME/.config/zsh/pure)
-
-# autoload -U promptinit; promptinit
-# prompt pure
-
 # Aliases
 source $HOME/.config/zsh/aliases.zsh
 
@@ -35,5 +29,8 @@ eval $(keychain --eval --quiet ~/.config/.ssh/id_ed25519)
 # Plugins 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Theme
+eval "$(starship init zsh)"
 
 # End of file
