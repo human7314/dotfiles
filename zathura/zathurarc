@@ -5,3 +5,4 @@ set default-bg "#2e3440"
 set font "JetBrainsMono Nerd Font Mono"
 set statusbar-fg "#eceff4"
 set statusbar-bg "#3b4252"
+set selection-clipboard clipboard
