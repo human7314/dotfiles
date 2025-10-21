@@ -1,15 +1,23 @@
 #!/bin/sh
 
+# Display settings
+export DISPLAY=:0
+systemctl --user import-environment DISPLAY
+
+# xdg-desktop-portal
+systemctl --user start xdg-desktop-portal-gtk
+systemctl --user start xdg-desktop-portal
+
 # DPI
 xrdb -merge ~/.config/X11/Xresources 
 
 # Keyboard
-xset r rate 200 40 & 
+xset r rate 200 50 & 
 
 # Programs 
 dunst & 
 sxhkd &
-# lxsession & 
+lxsession & 
 flameshot &
 
 # numlock

@@ -10,7 +10,7 @@
 ! ----------------------
 
 ! --- Xft font rendering ---
-! Xft.dpi:        115
+Xft.dpi:        140
 Xft.antialias:  1
 Xft.hinting:    1
 Xft.hintstyle:  hintfull
@@ -55,7 +55,7 @@ Xft.rgba:       rgb
 
 dwm.normfgcolor:      #A6ADC8
 dwm.normbgcolor:      #242932
-dwm.normbordercolor:  #A6ADC8
+dwm.normbordercolor:  #2e3440
 
 dwm.selfgcolor:       #CDD6F4
 dwm.selbgcolor:       #242932
