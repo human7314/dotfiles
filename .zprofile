@@ -34,6 +34,15 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # export QT_QPA_PLATFORMTHEME=gtk3
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+# Java fix
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Fixing flameshot scaling with dpi
+export QT_SCALE_FACTOR=1
+export QT_SCREEN_SCALE_FACTORS=1
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_USE_PHYSICAL_DPI=1
+
 # Automatically start X on login to tty1 if DISPLAY is not set
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     startx
