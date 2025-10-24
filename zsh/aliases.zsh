@@ -1,14 +1,9 @@
 # git 
 alias gcl="git clone --depth=1"
 
-# storage
-
+# list content
 alias ll="exa --icons -1"
 alias l="exa --icons -a"
-
-#================
-# change dirs
-#================
 
 # Suckless
 alias suck="cd ~/.config/suckless"
@@ -23,7 +18,8 @@ alias eng="cd ~/Storage/studies/English/"
 alias open="xdg-open"
 
 # music
-# alias music="ncmpcpp"
+alias music="ncmpcpp"
+alias musicdl='yt-dlp -x --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata -o "~/Music/%(title)s.%(ext)s"'
 
 alias feh="feh --full-screen --edit"
 
@@ -32,4 +28,4 @@ alias vim="neovim"
 alias snvim="sudo -E -s nvim"
 
 # AUR Helper
-alias yay="paru"
+# alias yay="paru"
