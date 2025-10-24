@@ -18,6 +18,7 @@ dirs=(
   sxhkd
   zathura
   zsh
+  mpv
 )
 
 for dir in "${dirs[@]}"; do
@@ -45,4 +46,3 @@ else
 fi
 
 echo "✅ Dotfiles installation complete!"
-
