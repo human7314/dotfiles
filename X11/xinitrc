@@ -12,7 +12,7 @@ systemctl --user start xdg-desktop-portal
 xrdb -merge ~/.config/X11/Xresources 
 
 # Keyboard
-xset r rate 200 50 & 
+xset r rate 200 30 & 
 
 # Programs 
 dunst & 
@@ -24,10 +24,11 @@ flameshot &
 numlockx & 
 
 # Wallpaper
-nitrogen --restore &
+feh --no-fehbg --randomize --bg-fill ~/Pictures/Wallpapers
 
-# Nvidia
+# Scripts
 exec ~/.local/bin/nvidia_powerlevel.sh &
+exec ~/.local/bin/auto-sort.sh &
 
 # compositor
 picom & 
