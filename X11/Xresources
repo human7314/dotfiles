@@ -5,66 +5,108 @@
 ! |_| \_|\___/ \__,_|\__,_|\___|
 !
 
-! ----------------------
-! 1. General settings
-! ----------------------
-
-! --- Xft font rendering ---
-Xft.dpi:        140
+! ==============================================================================
+! 0. XFT FONT RENDERING
+! ==============================================================================
 Xft.antialias:  1
 Xft.hinting:    1
 Xft.hintstyle:  hintfull
 Xft.rgba:       rgb
+! Xft.dpi:      140
 
-! ----------------------
-! 2. st settings
-! ----------------------
+! ==============================================================================
+! 1. TERMINAL COLORS (st)
+! ==============================================================================
 
-! --- Core colors ---
-*.foreground:   #A6ADC8
-*.background:   #242932
-*.cursorColor:  #D8DEE9
+! --- Theme: Nord (Active) ---
+! *.foreground:   #A6ADC8
+! *.background:   #242932
+! *.cursorColor:  #D8DEE9
 
-! --- Terminal palette ---
-! Normal colors (0–7)
-*.color0:  #3B4252
-*.color1:  #BF616A
-*.color2:  #A3BE8C
-*.color3:  #EBCB8B
-*.color4:  #81A1C1
-*.color5:  #B48EAD
-*.color6:  #8FBCBB
-*.color7:  #E5E9F0
+! Normal colors
+! *.color0:  #3B4252
+! *.color1:  #BF616A
+! *.color2:  #A3BE8C
+! *.color3:  #EBCB8B
+! *.color4:  #81A1C1
+! *.color5:  #B48EAD
+! *.color6:  #8FBCBB
+! *.color7:  #E5E9F0
 
-! Bright colors (8–15)
-*.color8:  #4C566A
-*.color9:  #BF616A
-*.color10: #A3BE8C
-*.color11: #EBCB8B
-*.color12: #81A1C1
-*.color13: #B48EAD
-*.color14: #8FBCBB
-*.color15: #ECEFF4
+! Bright colors
+! *.color8:  #4C566A
+! *.color9:  #BF616A
+! *.color10: #A3BE8C
+! *.color11: #EBCB8B
+! *.color12: #81A1C1
+! *.color13: #B48EAD
+! *.color14: #8FBCBB
+! *.color15: #ECEFF4
 
-! --- Font + rendering ---
-*.font:        JetBrainsMono Nerd Font Mono:size=11
+! --- Theme: One Dark (Commented Out) ---
+*.foreground:   #abb2bf
+*.background:   #282c34
+*.cursorColor:  #abb2bf
+!
+! ! Normal colors
+*.color0:  #282c34
+*.color1:  #e06c75
+*.color2:  #98c379
+*.color3:  #d19a66
+*.color4:  #61afef
+*.color5:  #c678dd
+*.color6:  #56b6c2
+*.color7:  #abb2bf
+!
+! ! Bright colors
+*.color8:  #5c6370
+*.color9:  #e06c75
+*.color10: #98c379
+*.color11: #d19a66
+*.color12: #61afef
+*.color13: #c678dd
+*.color14: #56b6c2
+*.color15: #ffffff
 
-! ----------------------
-! 3. dwm settings
-! ----------------------
+! ==============================================================================
+! 2. APPLICATION SPECIFIC SETTINGS
+! ==============================================================================
+st.font: JetBrainsMono Nerd Font Mono:size=11
 
-dwm.normfgcolor:      #A6ADC8
-dwm.normbgcolor:      #242932
-dwm.normbordercolor:  #2e3440
+! ==============================================================================
+! 3. DWM COLOR SCHEMES
+! ==============================================================================
 
-dwm.selfgcolor:       #CDD6F4
-dwm.selbgcolor:       #242932
-dwm.selbordercolor:   #89B4FA
+! --- Theme: Nord (Commented Out) ---
+! dwm.normfgcolor:      #A6ADC8
+! dwm.normbgcolor:      #242932
+! dwm.normbordercolor:  #2e3440
+!
+! dwm.selfgcolor:       #CDD6F4
+! dwm.selbgcolor:       #242932
+! dwm.selbordercolor:   #89B4FA
+!
+! dwm.statusfgcolor:    #A6ADC8
+! dwm.statusbgcolor:    #242932
+!
+! dwm.tagsselcolor:     #EED49F
+! dwm.tagsnormcolor:    #A6ADC8
+! dwm.infofgcolor:      #CDD6F4
+! dwm.infonormcolor:    #A6ADC8
 
-dwm.statusfgcolor:    #A6ADC8
-dwm.statusbgcolor:    #242932
+! --- Theme: One Dark (Active) ---
+dwm.normfgcolor:     #abb2bf
+dwm.normbgcolor:     #282c34
+dwm.normbordercolor: #3e4452
 
-dwm.tagsselcolor:     #EED49F
-dwm.tagsnormcolor:    #A6ADC8
-dwm.infofgcolor:      #CDD6F4
-dwm.infonormcolor:    #A6ADC8
+dwm.selfgcolor:      #61afef
+dwm.selbgcolor:      #282c34
+dwm.selbordercolor:  #61afef
+
+dwm.statusfgcolor:   #abb2bf
+dwm.statusbgcolor:   #282c34
+
+dwm.tagsselcolor:    #e06c75
+dwm.tagsnormcolor:   #5c6370
+dwm.infofgcolor:     #61afef
+dwm.infonormcolor:   #abb2bf
