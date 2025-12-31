@@ -106,7 +106,7 @@ dwm.selbordercolor:  #61afef
 dwm.statusfgcolor:   #abb2bf
 dwm.statusbgcolor:   #282c34
 
-dwm.tagsselcolor:    #e06c75
+dwm.tagsselcolor:    #a6e3a1
 dwm.tagsnormcolor:   #5c6370
-dwm.infofgcolor:     #61afef
+dwm.infofgcolor:     #5c6370
 dwm.infonormcolor:   #abb2bf
