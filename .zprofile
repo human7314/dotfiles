@@ -34,6 +34,12 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # export QT_QPA_PLATFORMTHEME=gtk3
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+# --- System Defaults ---
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMINAL="st"
+export BROWSER="thorium-browser"
+
 # Java fix
 export _JAVA_AWT_WM_NONREPARENTING=1
 
