@@ -1,5 +1,9 @@
 # XDG Base Directory Specification
 
+# Display
+export LIBVA_DRIVER_NAME=vdpau
+export VDPAU_DRIVER=nvidia
+
 # User-specific configuration files (like /etc)
 export XDG_CONFIG_HOME="$HOME/.config"
 
