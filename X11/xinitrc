@@ -1,40 +1,63 @@
 #!/bin/sh
 
-# Display settings
+# --- SYSTEM DEFAULTS ---
+# This part ensures system-wide resources and scripts are loaded first.
+userresources="$HOME/.Xresources"
+usermodmap="$HOME/.Xmodmap"
+sysresources="/etc/X11/xinit/.Xresources"
+sysmodmap="/etc/X11/xinit/.Xmodmap"
+
+if [ -f "$sysresources" ]; then
+    xrdb -merge "$sysresources"
+fi
+
+if [ -f "$sysmodmap" ]; then
+    xmodmap "$sysmodmap"
+fi
+
+if [ -f "$userresources" ]; then
+    xrdb -merge "$userresources"
+fi
+
+if [ -f "$usermodmap" ]; then
+    xmodmap "$usermodmap"
+fi
+
+# Load system-wide startup scripts (important for DBus/Gnome-keyring)
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
+
+# --- YOUR CUSTOMIZATIONS ---
+
+# Environment & Display
 export DISPLAY=:0
 systemctl --user import-environment DISPLAY
 
-# xdg-desktop-portal
+# Desktop Portals (helps with screen sharing and file pickers)
 systemctl --user start xdg-desktop-portal-gtk
 systemctl --user start xdg-desktop-portal
 
-# DPI
+# Input & DPI Settings
 xrdb -merge ~/.config/X11/Xresources 
-
-# Keyboard
 xset r rate 200 30 & 
+numlockx & 
 
-# Programs 
+# Background Services
 dunst & 
 sxhkd &
 lxsession & 
 flameshot &
-
-# numlock
-numlockx & 
-
-# Wallpaper
-feh --no-fehbg --randomize --bg-fill ~/Pictures/Wallpapers
-
-# Scripts
-exec ~/.local/bin/nvidia_powerlevel.sh &
-exec ~/.local/bin/auto-sort.sh &
-
-# compositor
 picom & 
 
-# Lockscreen
-# betterlockscreen &
+# Wallpaper
+feh --no-fehbg --randomize --bg-fill ~/Pictures/Wallpapers &
 
-# dwm
+# Custom Scripts
+~/.local/bin/nvidia_powerlevel.sh &
+~/.local/bin/auto-sort.sh &
+
 exec ~/.local/bin/dwmstart.sh
