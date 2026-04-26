@@ -1,0 +1,49 @@
+# Alacritty Configuration - Nordic Dark
+
+[window]
+padding = { x = 12, y = 12 }
+dynamic_title = true
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[colors.primary]
+# Deep Polar Night (Darker than standard Nord)
+background = "#242933" 
+foreground = "#d8dee9"
+
+[colors.cursor]
+text = "#2e3440"
+cursor = "#d8dee9"
+
+[colors.normal]
+black   = "#3b4252" # Polar Night
+red     = "#bf616a" # Aurora Red
+green   = "#a3be8c" # Aurora Green
+yellow  = "#ebcb8b" # Aurora Yellow
+blue    = "#81a1c1" # Frost Blue
+magenta = "#b48ead" # Aurora Purple (Subdued)
+cyan    = "#88c0d0" # Frost Cyan
+white   = "#e5e9f0" # Snow Storm
+
+[colors.bright]
+black   = "#4c566a"
+red     = "#bf616a"
+green   = "#a3be8c"
+yellow  = "#ebcb8b"
+blue    = "#81a1c1"
+magenta = "#b48ead"
+cyan    = "#8fbcbb"
+white   = "#eceff4"
