@@ -19,6 +19,7 @@ dirs=(
   zathura
   zsh
   mpv
+  alacritty
 )
 
 for dir in "${dirs[@]}"; do

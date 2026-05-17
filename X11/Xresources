@@ -77,36 +77,36 @@ st.font: JetBrainsMono Nerd Font Mono:size=11
 ! 3. DWM COLOR SCHEMES
 ! ==============================================================================
 
-! --- Theme: Nord (Commented Out) ---
-! dwm.normfgcolor:      #A6ADC8
-! dwm.normbgcolor:      #242932
-! dwm.normbordercolor:  #2e3440
-!
-! dwm.selfgcolor:       #CDD6F4
-! dwm.selbgcolor:       #242932
-! dwm.selbordercolor:   #89B4FA
-!
-! dwm.statusfgcolor:    #A6ADC8
-! dwm.statusbgcolor:    #242932
-!
-! dwm.tagsselcolor:     #EED49F
-! dwm.tagsnormcolor:    #A6ADC8
-! dwm.infofgcolor:      #CDD6F4
-! dwm.infonormcolor:    #A6ADC8
+! --- Theme: Nord ---
+dwm.normfgcolor:      #A6ADC8
+dwm.normbgcolor:      #242932
+dwm.normbordercolor:  #2e3440
 
-! --- Theme: One Dark (Active) ---
-dwm.normfgcolor:     #abb2bf
-dwm.normbgcolor:     #282c34
-dwm.normbordercolor: #3e4452
+dwm.selfgcolor:       #CDD6F4
+dwm.selbgcolor:       #242932
+dwm.selbordercolor:   #89B4FA
 
-dwm.selfgcolor:      #61afef
-dwm.selbgcolor:      #282c34
-dwm.selbordercolor:  #61afef
+dwm.statusfgcolor:    #A6ADC8
+dwm.statusbgcolor:    #242932
 
-dwm.statusfgcolor:   #abb2bf
-dwm.statusbgcolor:   #282c34
+dwm.tagsselcolor:     #EED49F
+dwm.tagsnormcolor:    #A6ADC8
+dwm.infofgcolor:      #CDD6F4
+dwm.infonormcolor:    #A6ADC8
 
-dwm.tagsselcolor:    #a6e3a1
-dwm.tagsnormcolor:   #5c6370
-dwm.infofgcolor:     #94a3a8
-dwm.infonormcolor:   #abb2bf
+! --- Theme: One Dark (Commented Out) ---
+! dwm.normfgcolor:     #abb2bf
+! dwm.normbgcolor:     #282c34
+! dwm.normbordercolor: #3e4452
+! 
+! dwm.selfgcolor:      #61afef
+! dwm.selbgcolor:      #282c34
+! dwm.selbordercolor:  #61afef
+! 
+! dwm.statusfgcolor:   #abb2bf
+! dwm.statusbgcolor:   #282c34
+! 
+! dwm.tagsselcolor:    #a6e3a1
+! dwm.tagsnormcolor:   #5c6370
+! dwm.infofgcolor:     #94a3a8
+! dwm.infonormcolor:   #abb2bf

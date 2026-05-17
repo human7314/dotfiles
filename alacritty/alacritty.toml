@@ -1,8 +1,19 @@
-# Alacritty Configuration - Nordic Dark
+# Alacritty Configuration — Nordic Darker Theme
 
 [window]
-padding = { x = 12, y = 12 }
-dynamic_title = true
+padding = { x = 18, y = 16 }
+dynamic_padding = true
+decorations = "Full"
+opacity = 0.85
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 120
+lines = 32
+
+[scrolling]
+history = 10000
+multiplier = 3
 
 [font]
 size = 11.0
@@ -19,27 +30,44 @@ style = "Bold"
 family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
 
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 1
+
+# ── Nordic Darker Color Scheme ──────────────────────────────────────────
+
 [colors.primary]
-# Deep Polar Night (Darker than standard Nord)
-background = "#242933" 
-foreground = "#d8dee9"
+background = "#191c24"
+foreground = "#c8d0e0"
 
 [colors.cursor]
-text = "#2e3440"
+text = "#191c24"
 cursor = "#d8dee9"
 
+[colors.vi_mode_cursor]
+text = "#191c24"
+cursor = "#88c0d0"
+
+[colors.selection]
+text = "CellForeground"
+background = "#3b4252"
+
 [colors.normal]
-black   = "#3b4252" # Polar Night
-red     = "#bf616a" # Aurora Red
-green   = "#a3be8c" # Aurora Green
-yellow  = "#ebcb8b" # Aurora Yellow
-blue    = "#81a1c1" # Frost Blue
-magenta = "#b48ead" # Aurora Purple (Subdued)
-cyan    = "#88c0d0" # Frost Cyan
-white   = "#e5e9f0" # Snow Storm
+black   = "#191c24"
+red     = "#bf616a"
+green   = "#a3be8c"
+yellow  = "#ebcb8b"
+blue    = "#81a1c1"
+magenta = "#b48ead"
+cyan    = "#88c0d0"
+white   = "#c8d0e0"
 
 [colors.bright]
-black   = "#4c566a"
+black   = "#3b4252"
 red     = "#bf616a"
 green   = "#a3be8c"
 yellow  = "#ebcb8b"
@@ -47,3 +75,62 @@ blue    = "#81a1c1"
 magenta = "#b48ead"
 cyan    = "#8fbcbb"
 white   = "#eceff4"
+
+[colors.dim]
+black   = "#1a1e28"
+red     = "#7a4650"
+green   = "#6d8a6e"
+yellow  = "#a08e63"
+blue    = "#5d71a1"
+magenta = "#7a5e80"
+cyan    = "#5f8080"
+white   = "#808890"
+
+[colors.search.matches]
+foreground = "#191c24"
+background = "#ebcb8b"
+
+[colors.search.focused_match]
+foreground = "#191c24"
+background = "#a3be8c"
+
+[colors.footer_bar]
+foreground = "#191c24"
+background = "#88c0d0"
+
+[colors.hints.start]
+foreground = "#191c24"
+background = "#ebcb8b"
+
+[colors.hints.end]
+foreground = "#191c24"
+background = "#3b4252"
+
+[colors.line_indicator]
+foreground = "#c8d0e0"
+background = "#2e3440"
+
+# ── Cursor ───────────────────────────────────────────────────────────────
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
+blink_interval = 750
+unfocused_hollow = true
+
+# ── Mouse ────────────────────────────────────────────────────────────────
+
+[mouse]
+hide_when_typing = true
+
+# ── Bell ─────────────────────────────────────────────────────────────────
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+# ── Selection ────────────────────────────────────────────────────────────
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
