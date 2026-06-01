@@ -20,6 +20,7 @@ dirs=(
   zsh
   mpv
   alacritty
+  mpd
 )
 
 for dir in "${dirs[@]}"; do
