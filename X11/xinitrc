@@ -59,5 +59,6 @@ feh --no-fehbg --randomize --bg-fill ~/Pictures/Wallpapers &
 # Custom Scripts
 ~/.local/bin/nvidia_powerlevel.sh &
 ~/.local/bin/auto-sort.sh &
+~/.local/bin/media-watch.sh &
 
 exec ~/.local/bin/dwmstart.sh
